@@ -1,0 +1,213 @@
+body{
+    background-color: #071b2a;
+    position: relative;    
+}
+
+header{
+    position: relative;
+    padding: 2rem 0;
+}
+.navbar>ul>li{
+    list-style: none;
+}
+.navbar>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5em;
+}
+.logo>img{
+    width: 7em;
+    height:7rem;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+}
+.navbar{
+    background-color:rgba(128, 128, 128, 0.299);
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    backdrop-filter: blur(10px);
+}
+.toggle-button{
+    height: 50%;
+    display: grid;
+    align-items: center;
+    padding-left: 2rem;
+}
+.toggle-button>i{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.navbar>ul>li>a.home{
+    color: aqua;
+    border: 1px solid aqua;
+}
+.navbar>ul>li>a:hover{
+    color: aqua;
+    border: 1px solid aqua;
+}
+.links{
+    display: flex;
+    gap: 2rem;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    margin-left: 1rem;
+}
+.drop-down-menu li:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+.drop-down-menu{
+    display: none;
+    position:absolute;
+    right: 0rem;
+    top: 150px;
+    height: 0;
+    width: 200px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.drop-down-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop-down-menu li a{
+    text-decoration: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+ .open{
+    height: 13rem;
+}
+@media(max-width:720px){
+    .navbar .links{
+        display:none;
+    }
+
+    .navbar .toggle-button>i{
+        display: block;
+        font-size: 2rem;
+    }
+    .drop-down-menu{
+        display: block;
+    }
+}
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color:rgba(128, 128, 128, 0.299);
+    color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 23%;
+    padding: 10px;
+}
+.col:nth-child(2),.col:nth-child(3){
+    flex-basis: 15%;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.col h3{
+    font-size: 20px;
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    color: aqua;
+}
+.extra{
+    padding: 0;
+}
+
+.extra li{
+   list-style: none;
+   padding: 0.5rem 0;
+}
+.extra li a{
+    text-decoration: none;
+    
+   font-size: 18px;
+   font-weight: 50px;
+   color: #fff;
+}
+
+.col>ul>li>a:hover{
+    color: aqua;
+}
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+   font-weight: 50px;
+}
+.social-media{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.social-media i{
+    font-size: 1.5rem;
+}
+.social-media i:hover{
+    color: aqua;
+    margin-bottom: 2rem;
+    font-size: 25px;
+}
+.contact a:hover{
+    color: aqua;
+}
+.college-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.college-logo img{
+    width: 7rem;
+    height: 7rem;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:720px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis:100% ;
+    }
+    .col:nth-child(2),.col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
